@@ -53,15 +53,15 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                TextView ostatni = (TextView)findViewById(R.id.tekstKoniec);
+               /* TextView ostatni = (TextView)findViewById(R.id.tekstKoniec);
                 EditText imie = (EditText)findViewById(R.id.poleImie);
                 EditText nazwisko = (EditText)findViewById(R.id.poleNazwisko);
-                ostatni.setText(imie.getText() + " " + nazwisko.getText());
+                ostatni.setText(imie.getText() + " " + nazwisko.getText());*/
 
-//                Context context;
-//                context = getApplicationContext();
-//                Intent intent = new Intent(context, Obrazek.class);
-//                startActivity(intent);
+                Context context;
+                context = getApplicationContext();
+                Intent intent = new Intent(context, Obrazek.class);
+                startActivity(intent);
 
             }
         });

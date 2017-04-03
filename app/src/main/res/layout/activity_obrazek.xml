@@ -12,24 +12,52 @@
         <!--android:layout_centerHorizontal = "true"/>-->
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:id="@+id/android"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="27dp"
         app:srcCompat="@mipmap/android"
-        android:contentDescription=""
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="135dp"/>
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
-        android:text="Zmień obrazek"
+        android:text="Zmień"
         android:id="@+id/button4"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="71dp"
         android:onClick="zmienObrazek"
-        />
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Obrazki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_column="1"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:id="@+id/powrot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="poprzedniaAktywnosc"
+        android:text="Powrót"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignStart="@+id/android" />
+
+    <Button
+        android:id="@+id/poprzedniObrazek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poprzedni"
+        android:onClick="poprzedniObrazek"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignEnd="@+id/android" />
+
 </RelativeLayout>
